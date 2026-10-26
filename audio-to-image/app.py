@@ -1,5 +1,4 @@
 import base64
-
 import streamlit as st
 from agents import Agent, Runner
 from dotenv import load_dotenv
@@ -7,7 +6,7 @@ from openai import OpenAI
 
 load_dotenv()
 client = OpenAI()
-IMAGE_MODEL = "gpt-image-2"  # needs a verified org; switch to "dall-e-3" if you get a verification error
+IMAGE_MODEL = "gpt-image-2"
 
 prompt_agent = Agent(
     name="Image Prompt Agent",
